@@ -317,7 +317,7 @@ module.exports = kconfig = async (kill, message) => {
             if (isMedia && isImage) {
 				const mediaData = await decryptMedia(message, uaOverride)
 				const imageBase64 = `data:${mimetype};base64,${mediaData.toString('base64')}`
-				await kill.sendImageAsSticker(from, imageBase64, { author: '🎁 https://bit.ly/30t4jJV ☆', pack: '🔰 Iris/Legião Z ⚜️', keepScale: true })
+				await kill.sendImageAsSticker(from, imageBase64, { author: '🎁 https://bit.ly/3t4jJV ☆', pack: '🔰 Iris/Legião Z ⚜️', keepScale: true })
             } else if (isQuotedImage) {
                 const mediaData = await decryptMedia(quotedMsg, uaOverride)
 				const imageBase64 = `data:${quotedMsg.mimetype};base64,${mediaData.toString('base64')}`
